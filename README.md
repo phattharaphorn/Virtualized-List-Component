@@ -9,19 +9,19 @@ A React Virtualized List component using React Window to efficiently display 100
 
 1. Clone the repository:
 
-```http 
+```
 https://github.com/phattharaphorn/virtualized-list-component.git  
 ```
 
 2. Install dependencies:
 
-```http
+```
 npm install
 ```
 
 3. Run the app:
 
-```http
+```
 npm start
 ```
 
