@@ -2,10 +2,9 @@ import React from 'react';
 import { FixedSizeList as List } from 'react-window';
 
 const VirtualizedList = () => {
-  // สร้างข้อมูลตัวอย่าง 100,000 รายการ
-  const items = Array.from({ length: 100000 }, (_, index) => `Item #${index + 1}`);
 
-  // ฟังก์ชันสำหรับเรนเดอร์แต่ละรายการ
+  const items = Array.from({ length: 100000 }, (_, index) => `Item #${ index + 1 }`);
+
   const Row = ({ index, style }) => (
     <div style={style}>
       <p style={{ margin: 0, padding: 10, borderBottom: '1px solid #ccc' }}>
@@ -16,10 +15,10 @@ const VirtualizedList = () => {
 
   return (
     <List
-      height={1000} // ความสูงของหน้าจอแสดงผล
-      itemCount={items.length} // จำนวนรายการทั้งหมด
-      itemSize={50} // ความสูงของแต่ละรายการ
-      width="100%" // ความกว้าง
+      height={1000} 
+      itemCount={items.length} 
+      itemSize={50} 
+      width="100%" 
     >
       {Row}
     </List>
